@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Duah Hussain — Web & App Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- animated canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- header / nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <div class="brand-badge">DH</div>
+        <div class="brand-text">
+          <strong>Duah Hussain</strong>
+          <span>Web & App Developer • Creative Designer</span>
+        </div>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main menu">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-cta" href="mailto:duahhussain911@gmail.com"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+      </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN / HERO -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Holaa — welcome </p>
+          <h1>I'm <span class="accent">Duah Hussain</span></h1>
+          <p class="lead">I build user-centered websites and mobile apps, and design presentation templates and creative assets. I combine clean code with thoughtful design to create delightful experiences.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="#projects" class="btn btn-ghost">View Work</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="card about-card tilt reveal">
+            <p>I am a passionate and creative Computer Science graduate with a Bachelor’s degree, specializing in web and app development, database management, and innovative design. I enjoy transforming ideas into engaging digital experiences and creating presentation templates, social media graphics, flyers, and other creative content. I am dedicated to continuous learning and excited to contribute to projects that challenge me and showcase my versatility.</p>
+            <ul class="about-list">
+              <li>Frontend: HTML, CSS, JavaScript (component-based UIs)</li>
+              <li>Backend: Django (Python), Node.js (simple APIs)</li>
+              <li>Mobile: Flutter (Dart)</li>
+              <li>Databases: MySQL, Oracle, SQLite, MongoDB</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS : categorized -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills & Tools</h2>
+
+        <div class="skills-wrap reveal">
+          <div class="skill-group">
+            <h4>Programming Languages</h4>
+            <div class="skills-grid">
+              <div class="skill chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+              <div class="skill chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+              <div class="skill chip"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+              <div class="skill chip"><i class="devicon-dart-plain colored"></i><span>Dart</span></div>
+              <div class="skill chip"><i class="devicon-kotlin-plain colored"></i><span>Kotlin</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Frameworks & Libraries</h4>
+            <div class="skills-grid">
+              <div class="skill chip"><i class="devicon-react-original colored"></i><span>React</span></div>
+              <div class="skill chip"><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+              <div class="skill chip"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+              <div class="skill chip"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+              <div class="skill chip"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Databases</h4>
+            <div class="skills-grid">
+              <div class="skill chip"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+              <div class="skill chip"><i class="devicon-oracle-original colored"></i><span>Oracle</span></div>
+              <div class="skill chip"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+              <div class="skill chip"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Tools & Design</h4>
+            <div class="skills-grid">
+              <div class="skill chip"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+              <div class="skill chip"><i class="fa-solid fa-paint-brush"></i><span>Figma / Canva</span></div>
+              <div class="skill chip"><i class="fa-solid fa-database"></i><span>DB Design</span></div>
+              <div class="skill chip"><i class="fa-solid fa-file-powerpoint"></i><span>Presentation Templates</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (middle section #1) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid reveal">
+          <!-- mixed grid of projects -->
+          <article class="project-card tilt">
+            <h3>🌸 Perfume Store Website</h3>
+            <p>Elegant e-commerce webstore with product browsing & responsive layout.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>🪑 Antique Furniture Website</h3>
+            <p>Visually rich catalog highlighting furniture pieces with modern design.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>🎬 Movie Ticket Booking Website</h3>
+            <p>Seat selection UI and checkout flow designed for clarity and speed.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>💻 Personal Portfolio</h3>
+            <p>Animated, modern single-page portfolio showcasing my work and skills.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>🌐 Tech Blog Platform</h3>
+            <p>Simple content platform with categories and clean typography.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>💊 MI Room Pharmacy (NLC)</h3>
+            <p>Django + Oracle pharmacy management system with inventory and issuance flows.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>📊 Student Task Manager</h3>
+            <p>Flutter study planner with deadlines, reminders and local storage.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>🏫 Library Management App</h3>
+            <p>Book issue/return system and simple admin features.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>🔮 Path of Light Maze (Luminous Nexus)</h3>
+            <p>Circular maze puzzle with neon visuals and path solving animations.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>❌⭕ Neon Tic-Tac-Toe</h3>
+            <p>Glowing X/O game with satisfying micro-interactions.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>🐍 Snake Game (Classic Revival)</h3>
+            <p>Classic web-based arcade with responsive controls and scoring.</p>
+          </article>
+
+          <article class="project-card tilt">
+            <h3>🕹️ Memory Match Game</h3>
+            <p>Card matching game with timed mode and difficulty levels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (middle section #2 with different background + animation) -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid reveal">
+          <div class="card service tilt">
+            <i class="fa-solid fa-laptop-code icon"></i>
+            <h3>Web Apps</h3>
+            <p>Frontend UIs, responsive layouts, and small backend APIs to support your app.</p>
+          </div>
+
+          <div class="card service tilt">
+            <i class="fa-solid fa-mobile-screen icon"></i>
+            <h3>Mobile Apps</h3>
+            <p>Cross-platform Flutter apps focusing on performance and UX.</p>
+          </div>
+
+          <div class="card service tilt">
+            <i class="fa-solid fa-database icon"></i>
+            <h3>Databases</h3>
+            <p>Schema design, basic optimization, and integration with MySQL/Oracle.</p>
+          </div>
+
+          <div class="card service tilt">
+            <i class="fa-solid fa-palette icon"></i>
+            <h3>Design & Templates</h3>
+            <p>Presentation templates, social graphics, and branding materials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="muted center">I’m available for freelance work, collaboration, and student projects — send a message below.</p>
+
+        <div class="contact-layout">
+          <form id="contactForm" class="card contact-form reveal" autocomplete="on">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+            <div class="form-row">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="reset" class="btn btn-ghost">Reset</button>
+            </div>
+
+            <p id="formStatus" class="muted small mt-8">Or email me directly at <a href="mailto:duahhussain911@gmail.com">duahhussain911@gmail.com</a></p>
+          </form>
+
+          <aside class="card contact-info tilt reveal">
+            <h3>Contact Info</h3>
+            <p><strong>Email</strong><br><a href="mailto:duahhussain911@gmail.com">duahhussain911@gmail.com</a></p>
+            <p><strong>GitHub</strong><br><a href="https://github.com/duah-hussain911" target="_blank">duah-hussain911</a></p>
+            <p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/duah-hussain-a40402317" target="_blank">/in/duah-hussain-a40402317</a></p>
+
+            <div class="footer-socials mt-12">
+              <a href="https://github.com/duah-hussain911" target="_blank" rel="noopener" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+              <a href="https://www.linkedin.com/in/duah-hussain-a40402317" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+              <a href="mailto:duahhussain911@gmail.com" aria-label="Email"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email"></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="brand-small">DH</div>
+        <div>
+          <strong>Duah Hussain</strong>
+          <div class="muted small">© 2025 — Designed by Duah Hussain</div>
+        </div>
+      </div>
+
+      <div class="foot-right">
+        <div class="foot-icons">
+          <a href="https://github.com/duah-hussain911" target="_blank" rel="noopener" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/duah-hussain-a40402317" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+          <a href="mailto:duahhussain911@gmail.com" aria-label="Email"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
